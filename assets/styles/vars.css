@@ -1,0 +1,5 @@
+:root {
+    --p-primary-color: #FF3C48;          /* Основной цвет success */
+    --success-color-hover: #e65c34;    /* Цвет при наведении */
+    --success-color-text: #FFFFFF;     /* Цвет текста */
+}
