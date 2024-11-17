@@ -22,7 +22,7 @@ onBeforeMount(async ()=>{
     <div class="container">
       <img class="rounded-2xl h-[300px] object-cover w-full" src="https://placehold.co/1920x800" alt="">
       <PageBreadcrumbs :items="items" />
-      <h1 class="font-medium text-4xl mb-5">{{category?.name}}</h1>
+      <h1 class="font-medium text-4xl mb-5 mt-5">{{category?.name}}</h1>
       <div class="grid grid-cols-1 md:grid-cols-4">
         <CardProduct v-for="(product, index) in category.products" :key="index" :product="product" />
       </div>

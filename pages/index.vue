@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-
+const {$api} = useNuxtApp()
 const { t } = useI18n()
-
+const popular = ref([])
 const deliveryOptions = [
   {title:t('index_delivery_opt1_title'),text:t('index_delivery_opt1_text')},
   {title:t('index_delivery_opt2_title'),text:t('index_delivery_opt2_text')},
   {title:t('index_delivery_opt3_title'),text:t('index_delivery_opt3_text')},
   {title:t('index_delivery_opt4_title'),text:t('index_delivery_opt4_text')},
 ]
+onBeforeMount(async (): Promise<void> => {
+  popular.value = await $api(`/api/shop/popular`)
+})
 
 </script>
 
@@ -43,7 +46,7 @@ const deliveryOptions = [
       </h3>
       <p class="opacity-60 w-full md:w-[65%] mb-5">{{t('index_popular_text')}}</p>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <CardProduct v-for="i in 4"/>
+        <CardProduct :product="product" v-for="(product,index) in popular" :key="index"/>
       </div>
 
     </div>

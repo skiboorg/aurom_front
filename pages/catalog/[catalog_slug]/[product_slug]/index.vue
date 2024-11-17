@@ -5,6 +5,7 @@ const route = useRoute()
 const {$api} = useNuxtApp()
 const sessionUUID = useCookie('session_uuid')
 const product = ref({})
+const modelVisible = ref(false)
 const cartCount = useState('cartCount')
 import { useToast } from 'primevue/usetoast';
 
@@ -57,14 +58,17 @@ const addToCart = async ()=>{
     <div class="container">
 
       <PageBreadcrumbs :items="items" />
-      <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="">
           <Galleria :value="product.images" :responsiveOptions="responsiveOptions" :numVisible="5" containerStyle="max-width: 640px">
             <template #item="slotProps">
-              <img :src="slotProps.item.image"  style="width: 100%" />
+              <img class="w-full h-auto object-contain" :src="slotProps.item.image"   />
             </template>
             <template #thumbnail="slotProps">
-              <img class="bg-gray-50 p-2 rounded-md w-[90%]" :src="slotProps.item.image"  />
+              <div class="bg-gray-50 p-2 rounded-md w-full h-[100px] flex items-center justify-center">
+                <img class=" w-full h-[100px] object-contain" :src="slotProps.item.image"  />
+              </div>
+
             </template>
           </Galleria>
         </div>
@@ -77,8 +81,10 @@ const addToCart = async ()=>{
             <p><span class="opacity-60">{{t('item_page_in_country')}}</span> {{product.country}}</p>
             <p><span class="opacity-60">{{t('item_page_in_delivery')}}</span> {{product.delivery}}</p>
           </div>
-          <p class="text-4xl font-medium">{{product.price}} ₽</p>
-          <p class="opacity-60 leading-6 mb-9">{{product.price_opt}} ₽ {{product.price_description}}</p>
+          <p class="text-4xl font-medium">{{product.price}} €</p>
+          <p class="text-2xl font-medium">{{product.price_usd}} $</p>
+          <p class="text-2xl font-medium">{{product.price_rub}} ₽</p>
+<!--          <p class="opacity-60 leading-6 mb-9">{{product.price_opt}} € {{product.price_description}}</p>-->
           <div class="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap">
             <InputNumber input-class="text-center" v-model="amount" inputId="horizontal-buttons" showButtons buttonLayout="horizontal" :min="1" :step="1"  fluid>
               <template #incrementbuttonicon>
@@ -89,7 +95,7 @@ const addToCart = async ()=>{
               </template>
             </InputNumber>
             <Button :disabled="!amount" @click="addToCart" fluid severity="contrast" :label="t('item_page_btn_add')"/>
-            <Button fluid :label="t('item_page_btn_opt')"/>
+            <Button @click="modelVisible = true" fluid :label="t('item_page_btn_opt')"/>
 
           </div>
         </div>
@@ -144,7 +150,10 @@ const addToCart = async ()=>{
 
     </div>
   </section>
+  <Dialog v-model:visible="modelVisible" modal :header="t('item_page_opt_modal_title')" :style="{ width: '25rem' }">
+    <span class="text-surface-500 dark:text-surface-400 block mb-8">{{t('item_page_opt_modal_text')}}</span>
 
+  </Dialog>
 
 </template>
 

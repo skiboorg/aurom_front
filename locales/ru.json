@@ -87,6 +87,7 @@
 
 
 
+  "item_page_price": "Цена:",
   "item_page_in_stock": "В наличии:",
   "item_page_in_fas": "Фасовка:",
   "item_page_in_country": "Страна производства:",
@@ -98,11 +99,15 @@
   "item_page_tab3": "Оплата",
   "item_page_tab4": "Документальное сопровождение",
 
+  "item_page_opt_modal_title":"Оптовый заказ",
+  "item_page_opt_modal_text":"Наберите нам, в любое время индивидуально с вами все решим",
+
   "cart_page_items": "товара",
   "cart_page_clear": "Очистить корзину",
   "cart_page_total": "Итого",
   "cart_page_summ": "Товара на сумму:",
   "cart_page_delivery": "Доставка:",
+  "cart_page_delivery_text": "Стоимость доставки расчитывается после оформления заказа, с вами свяжетя наш менеджер:",
   "cart_page_discount": "Скидка:",
   "cart_page_per1": "за 1шт",
   "checkout_page_personal": "Личные данные",

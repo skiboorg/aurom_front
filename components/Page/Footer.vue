@@ -23,12 +23,12 @@ const { t } = useI18n()
           <p class="text-sm opacity-60 mb-6">{{t('footer_menu')}}</p>
           <div class="flex flex-col">
             <NuxtLinkLocale to="/about" class="opacity-60 text-sm">О компании</NuxtLinkLocale>
-            <nuxt-link to="/" class="opacity-60 text-sm">Партнерство</nuxt-link>
-            <nuxt-link to="/" class="opacity-60 text-sm">Дополнительные услуги</nuxt-link>
-            <nuxt-link to="/" class="opacity-60 text-sm">Доставка и оплата</nuxt-link>
-            <nuxt-link to="/" class="opacity-60 text-sm">Новости</nuxt-link>
-            <nuxt-link to="/" class="opacity-60 text-sm">Каталог</nuxt-link>
-            <nuxt-link to="/" class="opacity-60 text-sm">Контакты</nuxt-link>
+<!--            <nuxt-link to="/" class="opacity-60 text-sm">Партнерство</nuxt-link>-->
+<!--            <nuxt-link to="/" class="opacity-60 text-sm">Дополнительные услуги</nuxt-link>-->
+<!--            <nuxt-link to="/" class="opacity-60 text-sm">Доставка и оплата</nuxt-link>-->
+<!--            <nuxt-link to="/" class="opacity-60 text-sm">Новости</nuxt-link>-->
+<!--            <nuxt-link to="/" class="opacity-60 text-sm">Каталог</nuxt-link>-->
+            <NuxtLinkLocale to="/contacts" class="opacity-60 text-sm">Контакты</NuxtLinkLocale>
           </div>
         </div>
         <div class="flex flex-col items-start justify-between">

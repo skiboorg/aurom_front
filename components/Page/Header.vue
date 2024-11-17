@@ -18,11 +18,11 @@ const switchLanguage = () => {
 
 const links = [
   {label:t('menu_about'), url:'/about'},
-  {label:t('menu_partner'), url:'/'},
-  {label:t('menu_add_service'), url:'/'},
-  {label:t('menu_delivery'), url:'/'},
-  {label:t('menu_contacts'), url:'/'},
-  {label:t('menu_news'), url:'/'},
+  //{label:t('menu_partner'), url:'/'},
+  //{label:t('menu_add_service'), url:'/'},
+  //{label:t('menu_delivery'), url:'/'},
+  {label:t('menu_contacts'), url:'/contacts'},
+  //{label:t('menu_news'), url:'/'},
 ]
 </script>
 
