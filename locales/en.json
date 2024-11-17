@@ -1,4 +1,157 @@
 {
-  "breadcrumb_home": "Главная",
-  "breadcrumb_catalog": "Каталог"
-}
+"breadcrumb_home": "Home",
+"breadcrumb_catalog": "Catalog",
+"breadcrumb_about": "About the company",
+"breadcrumb_cart": "Cart",
+"breadcrumb_checkout": "Order",
+"breadcrumb_contacts": "Contacts",
+
+"menu_about": "About the company",
+"menu_partner": "Partnership",
+"menu_add_service": "Additional services",
+"menu_delivery": "Delivery and payment",
+"menu_contacts": "Contacts",
+"menu_news": "News",
+
+"total_items_in_category": "items",
+"to_category": "Go to category",
+
+"button_callback": "Contact us",
+"button_go_to_site": "Go to the site",
+"button_product_card": "More details",
+"button_index_consult": "Get a consultation",
+
+"footer_news": "Write to us by email",
+"footer_menu": "MENU",
+"footer_contact": "CONTACT US",
+"footer_time": "WORKING HOURS",
+"footer_address": "ADDRESS",
+"footer_address1": "Russia, Moscow",
+"footer_address2": "Letnikovskaya St., 4, building 5",
+
+"index_offer": "Supply of ingredients and integrated solutions for",
+"index_offer_span": "food and beverage industry",
+"index_offer_text": "Our products are manufactured at leading European food industry facilities. Our company has been in the food industry for over 10 years and has established itself as a reliable partner for many manufacturers.",
+"index_catalog_title": "PRODUCT RANGE",
+"index_catalog_text": "Below are the main categories of our products.",
+"index_popular_title": "POPULAR PRODUCTS",
+"index_popular_text": "Below are the most popular products from different categories.",
+"index_news_text": "ARTICLES AND NEWS",
+
+"index_delivery_title": "STAGES OF WORK",
+"index_delivery_text": "If you have any questions when placing an order, please contact us at phone number or WhatsApp: +7 928 067 51 12",
+"index_delivery_opt1_title": "Placing an order",
+"index_delivery_opt1_text": "You place an order on the website by selecting products and specifying contact information. \n\rThe system automatically sends a notification about a new order to managers by email or messenger.",
+"index_delivery_opt2_title": "Checking and confirming an order",
+"index_delivery_opt2_text": "The manager checks the availability of the product in the warehouse.\n\rIf the product is in stock, the manager confirms the order and notifies the client about it.\n\rIf the product is not in stock, the client is informed about the waiting period or offered an alternative option.",
+"index_delivery_opt3_title": "Payment for the order",
+"index_delivery_opt3_text": "After confirming the order, the client is given the opportunity to choose a payment method (bank card, electronic money, cash on delivery, etc.).\n\rPayment is made through a secure payment gateway.\nUpon completion of the payment, the system automatically sends a receipt to the client and a notification of successful payment.",
+"index_delivery_opt4_title": "Assembly and packaging order",
+"index_delivery_opt4_text": "Warehouse employees assemble the order according to the specification.\n\rThe goods are packed in accordance with safety and transportation requirements.\n\rThe necessary markings (recipient's address, tracking number, etc.) are applied to the packaging.",
+"index_delivery_opt5_title": "Order delivery",
+"index_delivery_opt5_text": "The order is transferred to the courier service or postal company.\n\rThe courier service receives information about the order and the customer's contact information.\n\rManagers track the delivery status and inform the customer of the estimated time of arrival of the parcel.",
+"index_delivery_opt6_title": "Confirmation of order receipt",
+"index_delivery_opt6_text": "When the customer receives their order, they sign the receipt documents.\n\rThe delivery information is sent back to the order management system. \n\rThe system sends a notification to the client that the order has been delivered.",
+
+"index_delivery_opt7_title": "After-sales service",
+"index_delivery_opt7_text": "Collecting feedback from the client (reviews, service ratings).\n\rSolving possible problems (replacement of goods, refund, etc.) in case of claims from the client.",
+"index_delivery_term_title":"DELIVERY TERMS",
+"index_delivery_term_text":"DELIVERY TERMS",
+"index_delivery_term_opt1_title":"Logistics",
+"index_delivery_term_opt1_text":"Logistics",
+"index_delivery_term_opt2_title":"Documentary support",
+"index_delivery_term_opt2_text":"Documentary support",
+
+"index_delivery_map_opt1_title":"LOGISTICS SERVICES",
+"index_delivery_map_opt1_text":"Our group of companies is a transport and forwarding and logistics hub capable of delivering cargo by any of the currently possible delivery methods, including air, rail, road and sea transportation.",
+"index_delivery_map_opt2_title":"OUR PARTNERS",
+"index_delivery_map_opt2_text":"Our regular partners are: SDEK, Delovye Linii, Russian Post and other logistics companies.",
+"index_delivery_map_opt3_title":"INDIVIDUAL APPROACH",
+"index_delivery_map_opt3_text":"Our specialists, having colossal experience, will think through everything for you down to the smallest detail. We will help you optimize your funds when planning delivery your cargo through a rational logistics solution.",
+
+"about_title": "United Expo Trade LLC",
+"about_text": "Is the official owner of the priority trademark «L`auroM», registered in the State Register of Trademarks and Service Marks.\n\n United Expo Trade LLC is a supplier of ingredients and integrated solutions for the food and beverage industry. Our products are manufactured at leading European food industry facilities. Our company has been on the food industry market for over 10 years and has established itself as a reliable partner for many manufacturers. Our advantages are the fastest possible delivery times, high-quality products and flexible terms of cooperation.\n\nUnited Expo Trade LLC is a consolidated group of companies that unites its own companies from near and far abroad in the following countries: Georgia, Turkey, Kyrgyzstan, Russia, Armenia. ",
+"about_card1_title": "Our range",
+"about_card1_text": "Our products are made from high-quality ingredients, emulsions, flavorings and dyes for the beverage industry. We carry out complex deliveries of food\u2028ingredients from European countries, Turkey and Georgia.\nWe have a diverse range and are ready to satisfy the manufacturer's request as much as possible, developing a custom-made drink flavor according to the customer's preferences. We provide full assistance and technological support in the production of drinks from our ingredients.",
+"about_card2_title": "Terms of delivery",
+"about_card2_text": "On our website you can purchase the products you need online with a full description\u2028and documentation. Our managers will also provide you with full assistance in logistics solutions for the delivery of the products you purchased. We have an individual approach to each customer.",
+"about_card3_title": "Partnership",
+"about_faq_text": "Don't have a question you're interested in? Contact us!",
+
+"about_faq_q1": "Do we work with foreign (non-Russian) companies?",
+"about_faq_a1": "Yes, we do. We have several legal entities in different countries to resolve the issue of payments in the current market conditions.",
+"about_faq_q2": "What are the delivery times for your products?",
+"about_faq_a2": "Average terms from 3 days (if the products are in stock and in stock) to 3 weeks (if the products are on order).",
+"about_faq_q3": "Can you assist in the delivery of goods to the Russian Federation? For example, from Europe",
+"about_faq_a3": "Yes, providing logistics services is our main focus. For advice, contact us at the specified contacts.",
+
+"item_page_price": "Price:",
+"item_page_in_stock": "In stock:",
+"item_page_in_fas": "Packaging:",
+"about_card3_text": "Over the many years of work, our partners have become leading beverage manufacturers in the Russian Federation and foreign countries. We have implemented a large number of projects related to the food industry, from individual development of drinks to selection of the required flavor.",
+"about_add_service_title": "Additional services",
+"about_add_service_text": "Our company provides assistance in the selection of imported equipment for the food industry and production lines, documentary and logistics support, contract holder services from equipment selection to commissioning. The company United Expo Trade LLC will be your reliable partner on the path to the development of your business. We will share with You with all our accumulated experience\u2028in the food industry.",
+"about_add_service_card1_title": "Transport and forwarding logistics",
+"about_add_service_card1_text": "We organize efficient delivery of goods from all over the world to the Russian Federation (any type of transportation), and also organize cargo escort for successful customs clearance.",
+"about_add_service_card2_title": "Legal support for foreign economic activity",
+"about_add_service_card2_text": "We will ensure full compliance of your foreign economic activity with the law, organize document flow and protect your interests.",
+"about_add_service_card3_title": "Assistance in business optimization and automation",
+"about_add_service_card3_text": "We help improve the efficiency of processes by implementing modern solutions for management and control.",
+"about_add_service_card4_title": "Selection of the necessary equipment to your requests",
+"about_add_service_card4_text": "We will help you find the right equipment that meets your requirements, provide documentation and delivery.",
+"about_faq_title": "Answers to frequently asked questions",
+"item_page_in_country": "Country of manufacture:",
+"item_page_in_delivery": "Delivery time: ",
+"item_page_btn_add": "Add to cart",
+"item_page_btn_opt": "Bulk order",
+"item_page_tab1": "Detailed description",
+"item_page_tab2": "Delivery",
+"item_page_tab3": "Payment",
+"item_page_tab4": "NONE",
+
+"item_page_opt_modal_title":"Wholesale order",
+"item_page_opt_modal_text":"Contact us at this number to place a wholesale order: +7 928 067 51 12",
+
+"item_tab_delivery_text": "We carry out delivery on our own both to any region of the Russian Federation and to any point in the world, thanks to the activities of our main logistics company \"United Trade Expo\". We also cooperate with all transport companies or can provide the opportunity to pick up the goods from our warehouse. You can find out all the detailed information by contacting us using the contacts listed on the website or after placing your order.",
+"item_tab_payment_text": "You can pay for your order after placing it in any way convenient for you: by transfer to a bank account, in cash upon receipt or to the account of one of our foreign legal entities (Turkey, Armenia, Georgia). You can find out all the detailed information by contacting us using the contacts provided on the website or after placing an order.",
+
+"cart_page_items": "items",
+
+"cart_page_clear": "Clear cart",
+
+"cart_page_total": "Total",
+
+"cart_page_summ": "Items for the amount of:",
+
+"cart_page_delivery": "Delivery:",
+
+"cart_page_delivery_text": "Delivery cost is calculated after placing an order, our manager will contact you",
+
+"cart_page_discount": "Discount:",
+
+"cart_page_per1": "per 1 unit.",
+
+"checkout_page_personal": "Personal data",
+
+"cart_page_checkout": "To checkout ",
+
+"checkout_page_delivery": "Delivery",
+
+"checkout_page_payment": "Payment method",
+
+"checkout_page_fio": "Full name",
+"checkout_page_email": "Email address*",
+"checkout_page_phone": "Phone*",
+"checkout_page_address": "Shipping address",
+"checkout_page_comment": "Order comment",
+"checkout_page_button": "Place order",
+
+  "contacts_rf_title": "Russia",
+  "contacts_rf_text": "Legal address: 101000, Moscow, Ulanskiy per., 22, building 1, premises 83n/6\nActual address: 362002. Republic of North Ossetia-Alania, Vladikavkaz, Leo Tolstoy St. 14, apt. 5-6",
+  "contacts_gr_title": "Georgia",
+  "contacts_gr_text": "MERIDIANI LLC\n\rAddress: Georgia, Tbilisi, Isan district, st. Avtandila Kvezereli-Kapadze №20b",
+  "contacts_ar_title": "Armenia",
+  "contacts_ar_text": "LLC ARMEXPORTTRADE\n\rAddress: Araratyan st./ bld. 122 NOR KYANK 0614 NOR KYANK, ARARAT, ARMENIA",
+  "contacts_tr_title": "Turkey",
+  "contacts_tr_text": "MERİDİAN DIŞ TİCARET LİMİTED ŞİRKETİ . \n\rАДРЕС: İNÖNÜ MAHALLESİ 1403 SOKAK, POZCU EVO KAT:3 DAİRE: 23 MERSİN, TÜRKİYE"
+  }

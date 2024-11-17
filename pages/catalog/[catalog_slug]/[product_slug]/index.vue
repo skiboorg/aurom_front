@@ -83,7 +83,7 @@ const addToCart = async ()=>{
           </div>
           <p class="text-4xl font-medium">{{product.price}} €</p>
           <p class="text-2xl font-medium">{{product.price_usd}} $</p>
-          <p class="text-2xl font-medium">{{product.price_rub}} ₽</p>
+          <p class="text-2xl font-medium mb-4">{{product.price_rub}} ₽</p>
 <!--          <p class="opacity-60 leading-6 mb-9">{{product.price_opt}} € {{product.price_description}}</p>-->
           <div class="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap">
             <InputNumber input-class="text-center" v-model="amount" inputId="horizontal-buttons" showButtons buttonLayout="horizontal" :min="1" :step="1"  fluid>
@@ -106,10 +106,12 @@ const addToCart = async ()=>{
   <div class="container">
     <Tabs value="0" scrollable>
       <TabList>
-        <Tab value="0">{{t('item_page_tab1')}}</Tab>
-        <Tab value="1">{{t('item_page_tab2')}}</Tab>
+        <Tab value="0">{{t('item_page_tab2')}}</Tab>
+        <Tab value="1">{{t('item_page_tab1')}}</Tab>
+
+
         <Tab value="2">{{t('item_page_tab3')}}</Tab>
-        <Tab value="3">{{t('item_page_tab4')}}</Tab>
+<!--        <Tab value="3">{{t('item_page_tab4')}}</Tab>-->
       </TabList>
       <TabPanels>
         <TabPanel value="0">
@@ -118,14 +120,12 @@ const addToCart = async ()=>{
         </TabPanel>
         <TabPanel value="1">
           <p class="m-0">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
-          </p>
+            {{t('item_tab_delivery_text')}}
+     </p>
         </TabPanel>
         <TabPanel value="2">
           <p class="m-0">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+            {{t('item_tab_payment_text')}}
           </p>
         </TabPanel>
         <TabPanel value="3">
@@ -138,18 +138,18 @@ const addToCart = async ()=>{
     </Tabs>
   </div>
 </section>
-  <section >
-    <div class="container">
-      <h3 class="text-4xl uppercase font-bold mb-5">
-        Похожие товары
-      </h3>
+<!--  <section >-->
+<!--    <div class="container">-->
+<!--      <h3 class="text-4xl uppercase font-bold mb-5">-->
+<!--        Похожие товары-->
+<!--      </h3>-->
 
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <CardProduct v-for="i in 4"/>
-      </div>
+<!--      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">-->
+<!--        <CardProduct v-for="i in 4"/>-->
+<!--      </div>-->
 
-    </div>
-  </section>
+<!--    </div>-->
+<!--  </section>-->
   <Dialog v-model:visible="modelVisible" modal :header="t('item_page_opt_modal_title')" :style="{ width: '25rem' }">
     <span class="text-surface-500 dark:text-surface-400 block mb-8">{{t('item_page_opt_modal_text')}}</span>
 

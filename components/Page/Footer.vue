@@ -50,7 +50,7 @@ const { t } = useI18n()
         </div>
       </div>
       <div class="flex items-center justify-between py-6 flex-wrap">
-        <p class="opacity-60">© 2010 - 2024 Юнайтед Экспо Трейд</p>
+        <p class="opacity-60">© 2010 - 2024 United Expo Trade</p>
         <p  class="opacity-60"><a href="https://www.instagram.com/vkryaz/" target="_blank">Website Development</a></p>
       </div>
     </div>
