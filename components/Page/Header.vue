@@ -43,10 +43,13 @@ const links = [
               </g>
             </svg>
 
-            <p class="opacity-80 ">8 800 333 55 70</p>
+            <p class="opacity-80 "><a href="tel:+7 928 067 51 12">+7 928 067 51 12</a></p>
 
           </div>
-          <Button :label="t('button_callback')" />
+          <a href="https://wa.me/+79280675112" target="_blank">
+            <Button :label="t('button_callback')" />
+          </a>
+
           <Select v-model="selectedLang" :options="languages" @update:modelValue="switchLanguage" option-value="value" option-label="name"   />
         </div>
         <div class="flex lg:hidden items-center gap-4">

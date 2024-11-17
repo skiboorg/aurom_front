@@ -17,7 +17,7 @@ onBeforeMount(async ()=>{
       <p class="font-medium">{{category.name}}</p>
       <p class="opacity-60">{{category.short_description}}</p>
       <p>{{category.display_amount}} {{t('total_items_in_category')}}</p>
-      <nuxt-link class="text-primary border-b border-primary inline-block" :to="`/catalog/${category.slug}`">{{t('breadcrumb_catalog')}}</nuxt-link>
+      <nuxt-link class="text-primary border-b border-primary inline-block" :to="`/catalog/${category.slug}`">{{t('to_category')}}</nuxt-link>
     </div>
   </div>
 </template>

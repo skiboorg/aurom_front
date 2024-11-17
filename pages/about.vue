@@ -13,7 +13,7 @@ const items = ref([
 
   <section>
     <div class="container">
-      <img class="rounded-2xl h-[300px] object-cover w-full" src="https://placehold.co/1920x800" alt="">
+      <img class="rounded-2xl h-[300px] object-cover w-full"  src="~/assets/images/other.png" alt="">
       <PageBreadcrumbs :items="items" />
       <h1 class="font-medium text-2xl md:text-4xl mb-5">{{t('about_title')}}</h1>
       <p class="opacity-60 text-md md:text-xl whitespace-pre-line">{{t('about_text')}}</p>
@@ -22,7 +22,7 @@ const items = ref([
 
   <section>
     <div class="container">
-      <div class="flex flex-col gap-3">
+      <div class="flex flex-col gap-3 mb-4">
         <div class="bg-gray-50 rounded p-7 flex items-start">
           <p class="text-primary text-2xl md:text-4xl font-medium  mr-10">01</p>
           <div class="">
@@ -47,6 +47,10 @@ const items = ref([
           </div>
 
         </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <img class="rounded-2xl  object-cover w-full" src="~/assets/images/a1.png" alt="">
+        <img class="rounded-2xl  object-cover w-full" src="~/assets/images/a2.png" alt="">
       </div>
 
     </div>

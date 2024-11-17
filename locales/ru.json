@@ -4,6 +4,7 @@
   "breadcrumb_about": "О компании",
   "breadcrumb_cart": "Корзина",
   "breadcrumb_checkout": "Оформление заявки",
+  "breadcrumb_contacts": "Контакты",
 
   "menu_about": "О компании",
   "menu_partner": "Партнерство",
@@ -13,6 +14,7 @@
   "menu_news": "Новости",
 
   "total_items_in_category": "товаров",
+  "to_category": "Перейти в категорию",
 
   "button_callback": "Заказать звонок",
   "button_go_to_site": "Перейти на сайт",
@@ -119,5 +121,15 @@
   "checkout_page_phone": "Телефон*",
   "checkout_page_address": "Адрес доставки",
   "checkout_page_comment": "Комментарий к заказу",
-  "checkout_page_button": "Отправить заявку"
+  "checkout_page_button": "Отправить заявку",
+
+
+  "contacts_rf_title": "РФ",
+  "contacts_rf_text": "Юридический адрес: 101000, город Москва , Уланский пер,д. 22 стр. 1 помещ. 83н/6\n\r\n\rФактический адрес: 362002. Республика Северная Осетия-Алания , город Владикавказ ул. Льва Толстого 14, кв 5-6",
+  "contacts_gr_title": "ГРУЗИЯ",
+  "contacts_gr_text": "MERIDIANI LLC\n\nЮридический адрес: Грузия, г. Тбилиси, Исанский р-он, ул. Автандила Квезерели-Копадзе №20б",
+  "contacts_ar_title": "АРМЕНИЯ",
+  "contacts_ar_text": "ООО «АРМЭКСПОРТТРЕЙД» ARMEXPORTTRADE LLC\n\nАдрес: ул. Араратян/ д. 122 НОР КЙАНК 0614 НОР КЙАНК, АРАРАТ, АРМЕНИЯ",
+  "contacts_tr_title": "ТУРЦИЯ",
+  "contacts_tr_text": "MERİDİAN DIŞ TİCARET LİMİTED ŞİRKETİ . \n\nАДРЕС: İNÖNÜ MAHALLESİ 1403 SOKAK, POZCU EVO KAT:3 DAİRE: 23 MERSİN, TÜRKİYE"
 }

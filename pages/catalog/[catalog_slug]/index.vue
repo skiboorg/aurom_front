@@ -20,7 +20,7 @@ onBeforeMount(async ()=>{
 <template>
   <section v-if="category">
     <div class="container">
-      <img class="rounded-2xl h-[300px] object-cover w-full" src="https://placehold.co/1920x800" alt="">
+      <img class="rounded-2xl h-[300px] object-cover w-full" src="~/assets/images/other.png" alt="">
       <PageBreadcrumbs :items="items" />
       <h1 class="font-medium text-4xl mb-5 mt-5">{{category?.name}}</h1>
       <div class="grid grid-cols-1 md:grid-cols-4">

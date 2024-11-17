@@ -11,7 +11,7 @@ const { t } = useI18n()
         <div class="bg-primary p-3 flex flex-col items-start justify-between rounded-md h-[300px]">
           <p class="text-white text-xl">{{t('footer_news')}}</p>
           <div class="w-full flex items-center justify-between">
-            <a class="text-sm opacity-50 text-white " href="mailto:mail@example.ru">mail@example.ru</a>
+            <a class="text-sm opacity-50 text-white " href="mailto:uet2022@mail.ru">uet2022@mail.ru</a>
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M39.4999 19.9999C39.4999 30.7695 30.7695 39.4999 19.9999 39.4999C9.23042 39.4999 0.5 30.7695 0.5 19.9999C0.5 9.23042 9.23042 0.5 19.9999 0.5C30.7695 0.5 39.4999 9.23042 39.4999 19.9999Z" stroke="white"/>
               <path d="M12.667 27.3334L27.3336 12.6667M27.3336 12.6667V27.3334M27.3336 12.6667H12.667" stroke="white" stroke-linecap="square"/>
@@ -32,25 +32,26 @@ const { t } = useI18n()
           </div>
         </div>
         <div class="flex flex-col items-start justify-between">
-          <div class="">
+          <div class="flex flex-col items-start">
             <p class="text-sm opacity-60 mb-6">{{t('footer_contact')}}</p>
-            <a class="text-xl font-bold"  href="tel:+7 (999) 000-00-00">+7 (999) 000-00-00</a>
+            <a class="text-xl font-bold"  href="tel:+7 928 067 51 12">+7 928 067 51 12</a>
+            <a class="text-xl font-bold"  href="tel:+7 928 498 11 12">+7 928 498 11 12</a>
           </div>
-          <div class="">
-            <p class="text-sm opacity-60 mb-6">{{t('footer_address')}}</p>
-            <p class="text-sm opacity-60 ">{{t('footer_address1')}}<br>{{t('footer_address2')}}</p>
-          </div>
+<!--          <div class="">-->
+<!--            <p class="text-sm opacity-60 mb-6">{{t('footer_address')}}</p>-->
+<!--            <p class="text-sm opacity-60 ">{{t('footer_address1')}}<br>{{t('footer_address2')}}</p>-->
+<!--          </div>-->
 
         </div>
         <div class="">
           <p class="text-sm opacity-60 mb-6">{{t('footer_time')}}</p>
 
-          <p class="text-xl font-bold" >8:00 — 18:00</p>
+          <p class="text-xl font-bold" >8:00 — 19:00 GMT +3</p>
         </div>
       </div>
       <div class="flex items-center justify-between py-6 flex-wrap">
         <p class="opacity-60">© 2010 - 2024 Юнайтед Экспо Трейд</p>
-        <p  class="opacity-60">Разработка сайта</p>
+        <p  class="opacity-60"><a href="https://www.instagram.com/vkryaz/" target="_blank">Website Development</a></p>
       </div>
     </div>
   </footer>

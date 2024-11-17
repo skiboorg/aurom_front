@@ -9,7 +9,7 @@ console.log(route)
 <template>
   <div  class="bg-gray-50 rounded p-7 flex flex-col items-start gap-5">
     <img :src="product?.image" alt="">
-    <p class="font-medium">{{product?.name}}</p>
+    <p class="font-medium text-2xl">{{product?.name}}</p>
 
     <div class="font-normal">
       <p><span class="opacity-60">{{t('item_page_in_stock')}} </span> {{product?.in_stock}}</p>
