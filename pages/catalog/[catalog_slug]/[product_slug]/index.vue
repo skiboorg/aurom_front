@@ -95,7 +95,7 @@ const addToCart = async ()=>{
               </template>
             </InputNumber>
             <Button :disabled="!amount" @click="addToCart" fluid severity="contrast" :label="t('item_page_btn_add')"/>
-            <Button @click="modelVisible = true" fluid :label="t('item_page_btn_opt')"/>
+            <Button severity="danger" @click="modelVisible = true" fluid :label="t('item_page_btn_opt')"/>
 
           </div>
         </div>
@@ -104,7 +104,7 @@ const addToCart = async ()=>{
   </section>
 <section>
   <div class="container">
-    <Tabs value="0" scrollable>
+    <Tabs value="0" scrollable >
       <TabList>
         <Tab value="0">{{t('item_page_tab2')}}</Tab>
         <Tab value="1">{{t('item_page_tab1')}}</Tab>

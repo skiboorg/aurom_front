@@ -82,8 +82,8 @@ const createOrder = async ()=>{
                 v-for="(item, index) in deliveries"
                 :key="index"
                 @click="orderData.delivery = item.id"
-                :class="{'bg-orange-100 border border-orange-200':orderData.delivery === item.id}"
-                class="bg-gray-50 rounded-xl p-7 border border-transparent cursor-pointer hover:bg-orange-100 hover:border hover:border-orange-200"
+                :class="{'bg-[#F2B6B6] border border-[#F2B6B6]':orderData.delivery === item.id}"
+                class="bg-gray-50 rounded-xl p-7 border border-transparent cursor-pointer hover:bg-[#F2B6B6] hover:border hover:border-[#F2B6B6]"
             >
               <img :src="item.image" class="mb-10">
               <p class="text-xl mb-5">{{item.name}}</p>
@@ -96,8 +96,8 @@ const createOrder = async ()=>{
                 v-for="(item, index) in payments"
                 :key="index"
                 @click="orderData.payment = item.id"
-                :class="{'bg-orange-100 border border-orange-200':orderData.payment === item.id}"
-                class="bg-gray-50 rounded-xl p-7 border border-transparent cursor-pointer hover:bg-orange-100 hover:border hover:border-orange-200"
+                :class="{'bg-[#F2B6B6] border border-[#F2B6B6]':orderData.payment === item.id}"
+                class="bg-gray-50 rounded-xl p-7 border border-transparent cursor-pointer hover:bg-[#F2B6B6] hover:border hover:border-[#F2B6B6]"
             >
               <img :src="item.image" class="mb-10">
               <p class="text-xl mb-5">{{item.name}}</p>

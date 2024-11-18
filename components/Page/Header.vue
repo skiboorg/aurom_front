@@ -47,7 +47,7 @@ const links = [
 
           </div>
           <a href="https://wa.me/+79280675112" target="_blank">
-            <Button :label="t('button_callback')" />
+            <Button severity="danger" :label="t('button_callback')" />
           </a>
 
           <Select v-model="selectedLang" :options="languages" @update:modelValue="switchLanguage" option-value="value" option-label="name"   />
