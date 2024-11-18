@@ -13,8 +13,8 @@ console.log(route)
 
     <div class="font-normal">
       <p><span class="opacity-60">{{t('item_page_in_stock')}} </span> {{product?.in_stock}}</p>
-      <p><span class="opacity-60">{{t('item_page_in_stock')}} </span> {{product?.unit}}</p>
-      <p><span class="opacity-60">{{t('item_page_in_stock')}} </span> {{product?.country}}</p>
+      <p><span class="opacity-60">{{t('item_page_in_fas')}} </span> {{product?.unit}}</p>
+      <p><span class="opacity-60">{{t('item_page_in_country')}} </span> {{product?.country}}</p>
       <p><span class="opacity-60">{{t('item_page_price')}} </span> {{product?.price}} €</p>
     </div>
     <NuxtLinkLocale :to="`/catalog/${route.params.catalog_slug}/${product?.slug}`">
