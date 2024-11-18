@@ -82,9 +82,9 @@ const addToCart = async ()=>{
             <p><span class="opacity-60">{{t('item_page_in_delivery')}}</span> {{product.delivery}}</p>
           </div>
           <p class="text-4xl font-medium">{{product.price}} €</p>
-          <p class="text-2xl font-medium">{{product.price_usd}} $</p>
-          <p class="text-2xl font-medium mb-4">{{product.price_rub}} ₽</p>
-<!--          <p class="opacity-60 leading-6 mb-9">{{product.price_opt}} € {{product.price_description}}</p>-->
+<!--          <p class="text-2xl font-medium">{{product.price_usd}} $</p>-->
+<!--          <p class="text-2xl font-medium mb-4">{{product.price_rub}} ₽</p>-->
+          <p class="opacity-60 leading-6 mb-9">{{product.price_opt}} € {{product.price_description}}</p>
           <div class="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap">
             <InputNumber input-class="text-center" v-model="amount" inputId="horizontal-buttons" showButtons buttonLayout="horizontal" :min="1" :step="1"  fluid>
               <template #incrementbuttonicon>

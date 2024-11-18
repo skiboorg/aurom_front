@@ -3,7 +3,7 @@ const props = defineProps(['items'])
 </script>
 
 <template>
-  <Breadcrumb  :model="items" >
+  <Breadcrumb  :model="items">
     <template #item="{ item, props }">
       <NuxtLinkLocale v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
         <a :href="href" v-bind="props.action" @click="navigate">

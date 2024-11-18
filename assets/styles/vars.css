@@ -3,3 +3,11 @@
     --success-color-hover: #e65c34;    /* Цвет при наведении */
     --success-color-text: #FFFFFF;     /* Цвет текста */
 }
+
+.p-breadcrumb{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.p-breadcrumb-item-link{
+    gap: 0 !important;
+}
