@@ -14,9 +14,9 @@ onBeforeMount(async ()=>{
   <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
     <div class="bg-gray-50 rounded p-7 flex flex-col items-start justify-between gap-5" v-for="category in categories" :key="category.slug">
       <div class="">
-        <img :src="category.image" alt="">
-        <p class="font-medium">{{category.name}}</p>
-        <p class="opacity-60">{{category.short_description}}</p>
+        <img class="mb-4" :src="category.image" alt="">
+        <p class="font-medium text-xl mb-3">{{category.name}}</p>
+        <p class="opacity-60 text-sm">{{category.short_description}}</p>
 
       </div>
       <div class="">
