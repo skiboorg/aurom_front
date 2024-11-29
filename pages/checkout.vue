@@ -13,7 +13,9 @@ const cart = ref({})
 
 const deliveries = ref([])
 const payments = ref([])
-
+useSeoMeta({
+  title: t('breadcrumb_checkout'),
+})
 onBeforeMount(async ()=>{
   cart.value = await $api(`/api/cart?session_id=${sessionUUID.value}`)
   deliveries.value = await $api(`/api/order/delivery`)

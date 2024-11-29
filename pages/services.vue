@@ -6,7 +6,10 @@ const items = ref([
   { label: t('breadcrumb_home'), route: '/' },
   { label: t('breadcrumb_services')},
 ]);
-
+useSeoMeta({
+  title: `${t('breadcrumb_services')} L’aurom`,
+  ogTitle: `${t('breadcrumb_services')} L’aurom`,
+})
 const leftList = [
   {title: t('services_block_opt1_title'), text: t('services_block_opt1_text')},
   {title: t('services_block_opt2_title'), text: t('services_block_opt2_text')},

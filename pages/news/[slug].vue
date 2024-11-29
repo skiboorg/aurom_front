@@ -14,6 +14,11 @@ onBeforeMount(async (): Promise<void> => {
     { label: t('breadcrumb_news'), route: '/news'},
     { label: news_item.value.name},
   ];
+
+  useSeoMeta({
+    title: `${news_item.value.name}`,
+    ogTitle: `${news_item.value.name}`,
+  })
 })
 
 

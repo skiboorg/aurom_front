@@ -12,7 +12,7 @@ const faq_items = [
   <section >
     <div class="container">
       <h3 class="font-medium text-2xl md:text-4xl mb-5">{{t('about_faq_title')}}</h3>
-      <p class="opacity-60 text-md md:text-xl whitespace-pre-line mb-9">{{t('about_faq_text')}}</p>
+      <p class="opacity-60 text-md  whitespace-pre-line mb-9">{{t('about_faq_text')}}</p>
       <Accordion >
         <AccordionPanel :value="index" v-for="(item,index) in faq_items" :key="index">
           <AccordionHeader>{{item.q}}</AccordionHeader>

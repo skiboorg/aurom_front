@@ -6,7 +6,10 @@ const items = ref([
   { label: t('breadcrumb_home'), route: '/' },
   { label: t('breadcrumb_partnership')},
 ]);
-
+useSeoMeta({
+  title: `${t('breadcrumb_partnership')} L’aurom`,
+  ogTitle: `${t('breadcrumb_partnership')} L’aurom`,
+})
 </script>
 
 <template>
@@ -15,7 +18,7 @@ const items = ref([
       <img class="rounded-2xl h-[300px] object-cover w-full"  src="~/assets/images/other.png" alt="">
       <PageBreadcrumbs :items="items" />
       <h1 class="font-medium text-2xl md:text-4xl mb-5">{{t('partnership_title')}}</h1>
-      <p class="opacity-60 text-md md:text-xl whitespace-pre-line mb-9">{{t('partnership_text')}}</p>
+      <p class="opacity-60 text-md  whitespace-pre-line mb-9">{{t('partnership_text')}}</p>
     
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
         <div class="bg-gray-50 rounded-xl py-10 px-8 ">

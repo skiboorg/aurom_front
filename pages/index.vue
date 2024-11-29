@@ -14,7 +14,12 @@ onBeforeMount(async (): Promise<void> => {
   popular.value = await $api(`/api/shop/popular`)
   news.value = await $api(`/api/news/index`)
 })
-
+useSeoMeta({
+  title: 'L’aurom - надежный поставщик концентратов для производств продукции',
+  ogTitle: 'L’aurom - надежный поставщик концентратов для производств продукции',
+  description: 'L’aurom - надежный поставщик концентратов для производств продукции',
+  ogDescription: 'L’aurom - надежный поставщик концентратов для производств продукции',
+})
 </script>
 
 <template>
@@ -32,7 +37,7 @@ onBeforeMount(async (): Promise<void> => {
   <section >
 
     <div class="container">
-      <p class="text-sm md:text-xl opacity-60 mb-4 md:mb-9">{{t('index_tag_catalog')}}</p>
+      <p class="text-sm md:text-md opacity-60 mb-4 md:mb-9">{{t('index_tag_catalog')}}</p>
       <h3 class="text-2xl md:text-4xl uppercase font-bold mb-5">
         {{t('index_catalog_title')}}
       </h3>
@@ -57,7 +62,7 @@ onBeforeMount(async (): Promise<void> => {
 
   <section >
     <div class="container">
-      <p class="text-sm md:text-xl opacity-60 mb-4 md:mb-9">{{t('index_tag_news')}}</p>
+      <p class="text-sm md:text-md opacity-60 mb-4 md:mb-9">{{t('index_tag_news')}}</p>
       <h3 class="text-4xl uppercase font-bold mb-5">
         {{t('index_news_text')}}
       </h3>
@@ -75,7 +80,7 @@ onBeforeMount(async (): Promise<void> => {
 
   <section >
     <div class="container">
-      <p class="text-sm md:text-xl opacity-60 mb-4 md:mb-9">{{t('index_tag_stage')}}</p>
+      <p class="text-sm md:text-md opacity-60 mb-4 md:mb-9">{{t('index_tag_stage')}}</p>
       <h3 class="text-2xl md:text-4xl uppercase font-bold mb-5 w-[80%]">{{t('index_delivery_title')}}</h3>
       <p class="opacity-60  w-full md:w-[65%] mb-5">{{t('index_delivery_text')}}</p>
       <div class="flex items-center  border-t py-7 " v-for="(item,index) in deliveryOptions" :key="index">
@@ -121,7 +126,7 @@ onBeforeMount(async (): Promise<void> => {
 <!--  </section>-->
   <section class="bg-gray-50 py-20">
     <div class="container">
-      <p class="text-sm md:text-xl opacity-60 mb-4 md:mb-9">{{t('index_tag_add_service')}}</p>
+      <p class="text-sm md:text-md opacity-60 mb-4 md:mb-9">{{t('index_tag_add_service')}}</p>
       <h3 class="font-bold text-2xl md:text-4xl mb-5">{{t('about_add_service_title')}}</h3>
       <p class="opacity-60 text-md  whitespace-pre-line mb-9">{{t('about_add_service_text')}}</p>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-3 mb-9">
@@ -170,7 +175,7 @@ onBeforeMount(async (): Promise<void> => {
     </div>
   </section>
  <PageMap/>
-
+<PageFaq/>
 
 </template>
 

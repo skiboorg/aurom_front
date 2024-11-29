@@ -13,17 +13,24 @@ onBeforeMount(async ()=>{
     { label: t('breadcrumb_catalog'), route: '/catalog'},
     { label: category.value.name }
   ]
+
+  useSeoMeta({
+    title: `${category.value.name} от поставщика концентратов L’aurom`,
+    ogTitle: 'О нашей компании L’aurom',
+  })
 })
+
 
 </script>
 
 <template>
+
   <section v-if="category">
     <div class="container">
       <img class="rounded-2xl h-[300px] object-cover w-full" src="~/assets/images/other.png" alt="">
       <PageBreadcrumbs :items="items" />
       <h1 class="font-medium text-4xl mb-5 mt-5">{{category?.name}}</h1>
-      <div class="grid grid-cols-1 md:grid-cols-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
         <CardProduct v-for="(product, index) in category.products" :key="index" :product="product" />
       </div>
     </div>

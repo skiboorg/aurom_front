@@ -32,6 +32,10 @@ onBeforeMount(async ()=>{
     { label: product.value.cat_name, route: `/catalog/${product.value.cat_slug}` },
     { label: product.value?.name },
   ]
+  useSeoMeta({
+    title: `${product.value.name} от поставщика концентратов L’aurom`,
+    ogTitle: `${product.value.name} от поставщика концентратов L’aurom`,
+  })
 })
 
 const addToCart = async ()=>{

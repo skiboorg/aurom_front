@@ -11,6 +11,10 @@ import { useToast } from 'primevue/usetoast';
 const toast = useToast();
 const cart = ref({})
 
+useSeoMeta({
+  title: t('breadcrumb_cart'),
+})
+
 onBeforeMount( ()=>{
   get_cart()
 })

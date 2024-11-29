@@ -12,7 +12,10 @@ onBeforeMount(async (): Promise<void> => {
 
   news.value = await $api(`/api/news/all`)
 })
-
+useSeoMeta({
+  title: `${t('breadcrumb_news')} L’aurom`,
+  ogTitle: `${t('breadcrumb_news')} L’aurom`,
+})
 
 
 </script>
