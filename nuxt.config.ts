@@ -4,11 +4,7 @@ import { fileURLToPath } from 'url'
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: [
-      "@nuxtjs/tailwindcss",
-      "@primevue/nuxt-module",
-      '@nuxtjs/i18n'
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module", '@nuxtjs/i18n', '@nuxtjs/robots'],
   css: [
       'primeicons/primeicons.css',
       '~/assets/styles/tailwind.css',
@@ -51,8 +47,8 @@ export default defineNuxtConfig({
   },
     runtimeConfig: {
         public:{
-            APIURL: 'http://127.0.0.1:8000',
-            //APIURL: 'https://felfri.ru',
+            //APIURL: 'http://127.0.0.1:8000',
+            APIURL: 'https://laurom.ru',
         }
     },
 

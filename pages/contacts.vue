@@ -73,7 +73,7 @@ useSeoMeta({
           <p class="opacity-90 leading-none  font-medium ">{{t('contacts_card_ru_address3')}}</p>
   </div>
         <div class="col-span-2 rounded-xl">
-          <img class="rounded-xl" src="https://placehold.co/600x400" alt="">
+          <img class="rounded-xl" src="~assets/images/ru.png" alt="">
         </div>
       </div>
     </div>
@@ -95,7 +95,7 @@ useSeoMeta({
           <p class="opacity-90 leading-none  font-medium ">{{t('contacts_card_ar_address2')}}</p>
         </div>
         <div class="col-span-2 rounded-xl">
-          <img class="rounded-xl" src="https://placehold.co/600x400" alt="">
+          <img class="rounded-xl" src="~assets/images/ar.png" alt="">
         </div>
       </div>
     </div>
@@ -117,7 +117,7 @@ useSeoMeta({
           <p class="opacity-90 leading-none  font-medium ">{{t('contacts_card_gr_address2')}}</p>
         </div>
         <div class="col-span-2 rounded-xl">
-          <img class="rounded-xl" src="https://placehold.co/600x400" alt="">
+          <img class="rounded-xl" src="~assets/images/gr.png" alt="">
         </div>
       </div>
     </div>
@@ -138,7 +138,7 @@ useSeoMeta({
           <p class="opacity-90 leading-none  font-medium ">{{t('contacts_card_tr_address2')}}</p>
         </div>
         <div class="col-span-2 rounded-xl">
-          <img class="rounded-xl" src="https://placehold.co/600x400" alt="">
+          <img class="rounded-xl" src="~assets/images/tr.png" alt="">
         </div>
       </div>
     </div>

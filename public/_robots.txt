@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /
+Allow: /ru/contacts
+Allow: /ru/services
+Allow: /ru/news/
+Allow: /ru/contacts
+Allow: /ru/catalog/
+Allow: /en/contacts
+Allow: /en/services
+Allow: /en/news/
+Allow: /en/contacts
+Allow: /en/catalog/
