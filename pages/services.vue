@@ -16,15 +16,16 @@ const leftList = [
   {title: t('services_block_opt3_title'), text: t('services_block_opt3_text')},
   {title: t('services_block_opt4_title'), text: t('services_block_opt4_text')},
   {title: t('services_block_opt5_title'), text: t('services_block_opt5_text')},
-  {title: t('services_block_opt6_title'), text: t('services_block_opt6_text')},
+
 ]
 const rightList = [
+  {title: t('services_block_opt6_title'), text: t('services_block_opt6_text')},
   {title: t('services_block_opt7_title'), text: t('services_block_opt7_text')},
   {title: t('services_block_opt8_title'), text: t('services_block_opt8_text')},
   {title: t('services_block_opt9_title'), text: t('services_block_opt9_text')},
   {title: t('services_block_opt10_title'), text: t('services_block_opt10_text')},
-  {title: t('services_block_opt11_title'), text: t('services_block_opt11_text')},
-  {title: t('services_block_opt12_title'), text: t('services_block_opt12_text')},
+  // {title: t('services_block_opt11_title'), text: t('services_block_opt11_text')},
+  // {title: t('services_block_opt12_title'), text: t('services_block_opt12_text')},
 ]
 </script>
 

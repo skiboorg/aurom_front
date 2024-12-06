@@ -30,7 +30,7 @@ useSeoMeta({
           {{t('index_offer')}}<br class="hidden md:inline"> <span class="text-primary">{{t('index_offer_span')}}</span>
       </h3>
       <p class="opacity-60 w-full md:w-[45%] mb-5">{{t('index_offer_text')}}</p>
-      <img class="rounded-2xl" src="~/assets/images/main.png" alt="">
+      <img class="rounded-2xl w-full" src="~/assets/images/main.png" alt="">
     </div>
   </section>
 
@@ -66,9 +66,9 @@ useSeoMeta({
       <h3 class="text-4xl uppercase font-bold mb-5">
         {{t('index_news_text')}}
       </h3>
-    <div class="grid grid-cols-2 gap-2">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
       <div class="bg-gray-50 rounded p-7 flex flex-col items-start gap-5" v-for="item in news" :key="item.id">
-        <img :src="item.image" alt="">
+        <img class="w-full object-cover" :src="item.image" alt="">
         <p class="font-medium">{{item.name}}</p>
         <p class="opacity-60">{{item.description}}</p>
         <NuxtLinkLocale class="border-b inline-block border-black" :to="`/news/${item.slug}`">{{t('button_product_card')}}</NuxtLinkLocale>

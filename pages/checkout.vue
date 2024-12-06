@@ -79,12 +79,12 @@ const createOrder = async ()=>{
           </div>
 
           <p class="font-bold text-3xl mb-7">{{t('checkout_page_delivery')}}</p>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-5">
             <div
                 v-for="(item, index) in deliveries"
                 :key="index"
                 @click="orderData.delivery = item.id"
-                :class="{'bg-[#F2B6B6] border border-[#F2B6B6]':orderData.delivery === item.id}"
+                :class="{'item-selected':orderData.delivery === item.id}"
                 class="bg-gray-50 rounded-xl p-7 border border-transparent cursor-pointer hover:bg-[#F2B6B6] hover:border hover:border-[#F2B6B6]"
             >
               <img :src="item.image" class="mb-10">
@@ -98,9 +98,10 @@ const createOrder = async ()=>{
                 v-for="(item, index) in payments"
                 :key="index"
                 @click="orderData.payment = item.id"
-                :class="{'bg-[#F2B6B6] border border-[#F2B6B6]':orderData.payment === item.id}"
+                :class="{'item-selected':orderData.payment === item.id}"
                 class="bg-gray-50 rounded-xl p-7 border border-transparent cursor-pointer hover:bg-[#F2B6B6] hover:border hover:border-[#F2B6B6]"
             >
+             {{orderData.payment === item.id}}
               <img :src="item.image" class="mb-10">
               <p class="text-xl mb-5">{{item.name}}</p>
               <p class="opacity-60">{{item.description}}</p>

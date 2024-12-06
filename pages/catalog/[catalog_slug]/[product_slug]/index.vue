@@ -78,18 +78,23 @@ const addToCart = async ()=>{
         </div>
         <div class="">
           <h1 class="text-4xl font-medium mb-5">{{product.name}}</h1>
-          <p class="opacity-60 leading-6 mb-9">{{product.short_description}}</p>
+          <p class="opacity-60 leading-6 mb-6">{{product.short_description}}</p>
+          <div v-if="product?.tags.length > 0" class="flex gap-3 flex-wrap mb-6">
+            <p class="border border-primary py-1.5 px-3.5 rounded-lg font-medium" v-for="tag in product?.tags" :key="tag.id">{{tag.name}}</p>
+          </div>
+
           <div class="flex flex-col gap-1 mb-9">
             <p><span class="opacity-60">{{t('item_page_in_stock')}}</span> {{product.in_stock}}</p>
             <p><span class="opacity-60">{{t('item_page_in_fas')}}</span> {{product.unit}}</p>
             <p><span class="opacity-60">{{t('item_page_in_country')}}</span> {{product.country}}</p>
             <p><span class="opacity-60">{{t('item_page_in_delivery')}}</span> {{product.delivery}}</p>
+
           </div>
           <p class="text-4xl font-medium">{{product.price}} €</p>
 <!--          <p class="text-2xl font-medium">{{product.price_usd}} $</p>-->
 <!--          <p class="text-2xl font-medium mb-4">{{product.price_rub}} ₽</p>-->
-          <p class="opacity-60 leading-6 mb-9">{{product.price_opt}} € {{product.price_description}}</p>
-          <div class="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap">
+          <p class="opacity-60 leading-6 mb-9">{{product.price_description}}</p>
+          <div class="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap mb-3">
             <InputNumber input-class="text-center" v-model="amount" inputId="horizontal-buttons" showButtons buttonLayout="horizontal" :min="1" :step="1"  fluid>
               <template #incrementbuttonicon>
                 <span class="pi pi-plus" />
@@ -102,6 +107,7 @@ const addToCart = async ()=>{
             <Button severity="danger" @click="modelVisible = true" fluid :label="t('item_page_btn_opt')"/>
 
           </div>
+          <a class="inline-block border-b text-sm opacity-60" href="#">{{t('item_page_test')}}</a>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@ const { t } = useI18n()
 const route = useRoute()
 let items
 
-const category = ref({})
+const category = ref(null)
 onBeforeMount(async ()=>{
   category.value = await $api(`/api/shop/category/${route.params.catalog_slug}`)
   items = [
@@ -27,7 +27,8 @@ onBeforeMount(async ()=>{
 
   <section v-if="category">
     <div class="container">
-      <img class="rounded-2xl h-[300px] object-cover w-full" src="~/assets/images/other.png" alt="">
+      <img v-if="category?.top_image" class="rounded-2xl h-[300px] object-cover w-full" :src="category?.top_image" alt="">
+      <img v-else class="rounded-2xl h-[300px] object-cover w-full" src="~/assets/images/other.png" alt="">
       <PageBreadcrumbs :items="items" />
       <h1 class="font-medium text-4xl mb-5 mt-5">{{category?.name}}</h1>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
