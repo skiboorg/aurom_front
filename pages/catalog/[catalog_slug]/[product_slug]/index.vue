@@ -8,6 +8,8 @@ const product = ref({})
 const modelVisible = ref(false)
 const cartCount = useState('cartCount')
 import { useToast } from 'primevue/usetoast';
+const eurUsd = useCookie('eurUsd')
+const eurRub = useCookie('eurRub')
 
 const toast = useToast();
 let items
@@ -79,7 +81,7 @@ const addToCart = async ()=>{
         <div class="">
           <h1 class="text-4xl font-medium mb-5">{{product.name}}</h1>
           <p class="opacity-60 leading-6 mb-6">{{product.short_description}}</p>
-          <div v-if="product?.tags.length > 0" class="flex gap-3 flex-wrap mb-6">
+          <div v-if="product?.tags?.length > 0" class="flex gap-3 flex-wrap mb-6">
             <p class="border border-primary py-1.5 px-3.5 rounded-lg font-medium" v-for="tag in product?.tags" :key="tag.id">{{tag.name}}</p>
           </div>
 
@@ -91,8 +93,8 @@ const addToCart = async ()=>{
 
           </div>
           <p class="text-4xl font-medium">{{product.price}} €</p>
-<!--          <p class="text-2xl font-medium">{{product.price_usd}} $</p>-->
-<!--          <p class="text-2xl font-medium mb-4">{{product.price_rub}} ₽</p>-->
+          <p class="text-2xl font-medium">{{parseFloat(product.price / eurUsd || 0).toFixed(2)}} $</p>
+          <p class="text-2xl font-medium mb-4">{{parseFloat(product.price / eurRub || 0).toFixed(2)}} ₽</p>
           <p class="opacity-60 leading-6 mb-9">{{product.price_description}}</p>
           <div class="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap mb-3">
             <InputNumber input-class="text-center" v-model="amount" inputId="horizontal-buttons" showButtons buttonLayout="horizontal" :min="1" :step="1"  fluid>
