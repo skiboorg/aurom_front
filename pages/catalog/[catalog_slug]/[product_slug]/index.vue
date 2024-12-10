@@ -111,7 +111,7 @@ const addToCart = async ()=>{
             <Button severity="danger" @click="modelVisible = true" fluid :label="t('item_page_btn_opt')"/>
 
           </div>
-          <a class="inline-block border-b text-sm opacity-60" href="#">{{t('item_page_test')}}</a>
+          <nuxt-link class="inline-block border-b text-sm opacity-60" to="/probe">{{t('item_page_test')}}</nuxt-link>
         </div>
       </div>
     </div>
