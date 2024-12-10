@@ -14,7 +14,7 @@ export default defineNuxtPlugin(() => {
         .then(data => {
             console.log('Полученные данные:', data);
             eurRub.value = parseFloat(data['rates']['EUR'])
-            eurUsd.value = parseFloat(data['rates']['USD']) / parseFloat(data['rates']['EUR'])
+            eurUsd.value =  parseFloat(data['rates']['EUR']) / parseFloat(data['rates']['USD'])
         })
         .catch(error => {
             console.error('Ошибка при выполнении запроса:', error);

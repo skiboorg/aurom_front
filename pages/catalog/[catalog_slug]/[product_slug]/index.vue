@@ -83,7 +83,7 @@ const addToCart = async ()=>{
           <h1 class="text-4xl font-medium mb-5">{{product.name}}</h1>
           <p class="opacity-60 leading-6 mb-6">{{product.short_description}}</p>
           <div v-if="product?.tags?.length > 0" class="flex gap-3 flex-wrap mb-6">
-            <p class="border border-primary py-1.5 px-3.5 rounded-lg font-medium" v-for="tag in product?.tags" :key="tag.id">{{tag.name}}</p>
+            <p class="border border-primary py-1.5 px-3.5 rounded-lg font-medium uppercase text-primary" v-for="tag in product?.tags" :key="tag.id">{{tag.name}}</p>
           </div>
 
           <div class="flex flex-col gap-1 mb-5">
@@ -125,7 +125,7 @@ const addToCart = async ()=>{
 
 
         <Tab value="2">{{t('item_page_tab3')}}</Tab>
-<!--        <Tab value="3">{{t('item_page_tab4')}}</Tab>-->
+        <Tab v-if="product.files?.length>0" value="3">{{t('item_page_tab4')}}</Tab>
       </TabList>
       <TabPanels>
         <TabPanel value="0">
@@ -143,10 +143,11 @@ const addToCart = async ()=>{
           </p>
         </TabPanel>
         <TabPanel value="3">
-          <p class="m-0">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-          </p>
+
+          <a class="block mb-3" :href="file.file" target="_blank" v-for="file in product.files" :key="file.id">
+            <Button  severity="contrast" :label="file.file.split('/').pop()"/>
+          </a>
+
         </TabPanel>
       </TabPanels>
     </Tabs>
