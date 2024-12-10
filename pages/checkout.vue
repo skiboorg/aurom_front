@@ -85,7 +85,7 @@ const createOrder = async ()=>{
                 :key="index"
                 @click="orderData.delivery = item.id"
                 :class="{'item-selected':orderData.delivery === item.id}"
-                class="bg-gray-50 rounded-xl p-7 border border-transparent cursor-pointer hover:bg-[#F2B6B6] hover:border hover:border-[#F2B6B6]"
+                class="bg-gray-50 rounded-xl p-7 border-4 border-transparent cursor-pointer hover:bg-[#F2B6B6] hover:border-4 hover:border-[#F2B6B6]"
             >
               <img :src="item.image" class="mb-10">
               <p class="text-xl mb-5">{{item.name}}</p>
@@ -99,9 +99,9 @@ const createOrder = async ()=>{
                 :key="index"
                 @click="orderData.payment = item.id"
                 :class="{'item-selected':orderData.payment === item.id}"
-                class="bg-gray-50 rounded-xl p-7 border border-transparent cursor-pointer hover:bg-[#F2B6B6] hover:border hover:border-[#F2B6B6]"
+                class="bg-gray-50 rounded-xl p-7 border-4  border-transparent cursor-pointer hover:bg-[#F2B6B6] hover:border-4 hover:border-[#F2B6B6]"
             >
-             {{orderData.payment === item.id}}
+
               <img :src="item.image" class="mb-10">
               <p class="text-xl mb-5">{{item.name}}</p>
               <p class="opacity-60">{{item.description}}</p>

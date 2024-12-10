@@ -5,7 +5,7 @@
 "breadcrumb_cart": "Cart",
 "breadcrumb_checkout": "Order",
 "breadcrumb_contacts": "Contacts",
-
+  "article": "Article",
 "menu_about": "About the company",
 "menu_partner": "Partnership",
 "menu_add_service": "Additional services",
@@ -102,6 +102,7 @@
 "about_faq_title": "Answers to frequently asked questions",
 "item_page_in_country": "Country of manufacture:",
 "item_page_in_delivery": "Delivery time: ",
+  "item_page_in_price_description": "Price by weight: ",
 "item_page_btn_add": "Add to cart",
 "item_page_btn_opt": "Bulk order",
 "item_page_tab1": "Detailed description",

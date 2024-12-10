@@ -79,23 +79,25 @@ const addToCart = async ()=>{
           </Galleria>
         </div>
         <div class="">
+          <p class="opacity-60 mb-5">[ {{t('article')}}: {{product.article}} ]</p>
           <h1 class="text-4xl font-medium mb-5">{{product.name}}</h1>
           <p class="opacity-60 leading-6 mb-6">{{product.short_description}}</p>
           <div v-if="product?.tags?.length > 0" class="flex gap-3 flex-wrap mb-6">
             <p class="border border-primary py-1.5 px-3.5 rounded-lg font-medium" v-for="tag in product?.tags" :key="tag.id">{{tag.name}}</p>
           </div>
 
-          <div class="flex flex-col gap-1 mb-9">
+          <div class="flex flex-col gap-1 mb-5">
             <p><span class="opacity-60">{{t('item_page_in_stock')}}</span> {{product.in_stock}}</p>
             <p><span class="opacity-60">{{t('item_page_in_fas')}}</span> {{product.unit}}</p>
+            <p><span class="opacity-60">{{t('item_page_in_price_description')}}</span> {{product.price_description}}</p>
             <p><span class="opacity-60">{{t('item_page_in_country')}}</span> {{product.country}}</p>
             <p><span class="opacity-60">{{t('item_page_in_delivery')}}</span> {{product.delivery}}</p>
 
           </div>
           <p class="text-4xl font-medium">{{product.price}} €</p>
-          <p class="text-2xl font-medium">{{parseFloat(product.price / eurUsd || 0).toFixed(2)}} $</p>
-          <p class="text-2xl font-medium mb-4">{{parseFloat(product.price / eurRub || 0).toFixed(2)}} ₽</p>
-          <p class="opacity-60 leading-6 mb-9">{{product.price_description}}</p>
+          <p class="text-1xl font-medium opacity-60 mb-5">{{parseFloat(product.price / eurUsd || 0).toFixed(2)}} $ / {{parseFloat(product.price / eurRub || 0).toFixed(2)}} ₽</p>
+
+
           <div class="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap mb-3">
             <InputNumber input-class="text-center" v-model="amount" inputId="horizontal-buttons" showButtons buttonLayout="horizontal" :min="1" :step="1"  fluid>
               <template #incrementbuttonicon>

@@ -5,6 +5,7 @@
   "breadcrumb_cart": "Корзина",
   "breadcrumb_checkout": "Оформление заявки",
   "breadcrumb_contacts": "Контакты",
+  "article": "Артикул",
 
 
   "menu_about": "О компании",
@@ -105,6 +106,7 @@
   "about_faq_title": "Ответы на частые вопросы",
   "item_page_in_country": "Страна производства:",
   "item_page_in_delivery": "Сроки поставки: ",
+  "item_page_in_price_description": "Цена к весу: ",
   "item_page_btn_add": "Добавить в корзину",
   "item_page_btn_opt": "Оптовый заказ",
   "item_page_tab1": "Доставка",
@@ -158,6 +160,7 @@
   "index_tag_stage": "[ Этапы работы ]",
   "index_tag_delivery": "[ Оплата и доставка ]",
   "index_tag_add_service": "[ Дополнительные услуги ]",
+  "index_tag_add_map": "[ Преимущества ]",
 
   "partnership_title": "Система скидок",
   "partnership_text": "Наша продукция произведена на лидирующих Европейских производствах\u2028пищевой промышленности. Наша компания на рынке пищевой отрасли более\u202810 лет и зарекомендовала себя надежным партнером для многих производителей. ",
