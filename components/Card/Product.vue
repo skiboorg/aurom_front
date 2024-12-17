@@ -15,7 +15,7 @@ console.log(route)
       <p><span class="opacity-60">{{t('item_page_in_stock')}} </span> {{product?.in_stock}}</p>
       <p><span class="opacity-60">{{t('item_page_in_fas')}} </span> {{product?.unit}}</p>
       <p><span class="opacity-60">{{t('item_page_in_country')}} </span> {{product?.country}}</p>
-      <p><span class="opacity-60">{{t('item_page_price')}} </span> {{product?.price}} €</p>
+      <p><span class="opacity-60">{{t('item_page_price')}} </span> {{product?.price}} ₽</p>
     </div>
     <NuxtLinkLocale class="block w-full" :to="`/catalog/${route.params.catalog_slug}/${product?.slug}`">
       <Button fluid severity="contrast"  :label="t('button_product_card')"/>

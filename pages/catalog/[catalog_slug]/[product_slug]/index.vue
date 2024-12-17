@@ -94,8 +94,8 @@ const addToCart = async ()=>{
             <p><span class="opacity-60">{{t('item_page_in_delivery')}}</span> {{product.delivery}}</p>
 
           </div>
-          <p class="text-4xl font-medium">{{product.price}} €</p>
-          <p class="text-1xl font-medium opacity-60 mb-5">{{parseFloat(product.price / eurUsd || 0).toFixed(2)}} $ / {{parseFloat(product.price / eurRub || 0).toFixed(2)}} ₽</p>
+          <p class="text-4xl font-medium">{{product.price}} ₽</p>
+          <p class="text-1xl font-medium opacity-60 mb-5">{{parseFloat(product.price / eurUsd || 0).toFixed(2)}} $ / {{parseFloat(product.price / eurRub || 0).toFixed(2)}} €</p>
 
 
           <div class="flex items-center justify-between gap-3 flex-wrap md:flex-nowrap mb-3">

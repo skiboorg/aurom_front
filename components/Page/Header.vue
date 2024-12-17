@@ -4,6 +4,7 @@ const { locale } = useI18n()
 const { t } = useI18n()
 const cartCount = useState('cartCount')
 const mobileMenuActive = ref(false)
+const q = ref(null)
 const languages = [
   {name:'RU',value:'ru'},
   {name:'EN',value:'en'},
@@ -34,6 +35,8 @@ const links = [
         <NuxtLinkLocale  to="/">
         <img src="~/assets/images/logo.png" alt="">
         </NuxtLinkLocale>
+
+
         <div class="hidden lg:flex items-center gap-4">
           <div class="flex items-center gap-2">
 
@@ -53,6 +56,15 @@ const links = [
           <Select v-model="selectedLang" :options="languages" @update:modelValue="switchLanguage" option-value="value" option-label="name"   />
         </div>
         <div class="flex lg:hidden items-center gap-4">
+          <NuxtLinkLocale to="/search" class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-2">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1458 14.5833H15.3229L15.0313 14.3021C16.0875 13.0772 16.6679 11.5132 16.6667 9.89584C16.6667 8.55669 16.2696 7.24762 15.5256 6.13416C14.7816 5.02071 13.7241 4.15287 12.4869 3.6404C11.2497 3.12793 9.88832 2.99385 8.57491 3.2551C7.2615 3.51636 6.05505 4.16122 5.10813 5.10813C4.16122 6.05505 3.51636 7.2615 3.2551 8.57491C2.99385 9.88832 3.12793 11.2497 3.6404 12.4869C4.15287 13.7241 5.02071 14.7816 6.13416 15.5256C7.24762 16.2696 8.55669 16.6667 9.89584 16.6667C11.5729 16.6667 13.1146 16.0521 14.3021 15.0313L14.5833 15.3229V16.1458L19.7917 21.3438L21.3438 19.7917L16.1458 14.5833ZM9.89584 14.5833C7.30209 14.5833 5.20834 12.4896 5.20834 9.89584C5.20834 7.30209 7.30209 5.20834 9.89584 5.20834C12.4896 5.20834 14.5833 7.30209 14.5833 9.89584C14.5833 12.4896 12.4896 14.5833 9.89584 14.5833Z" fill="#666666" />
+              </svg>
+
+
+            </div>
+          </NuxtLinkLocale>
           <NuxtLinkLocale to="/cart" class="flex lg:hidden items-center justify-between cursor-pointer">
             <div class="flex items-center gap-2">
               <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,19 +92,32 @@ const links = [
           <NuxtLinkLocale class="opacity-80 " :to="link.url" v-for="(link,index) in links" :key="index">{{link.label}}</NuxtLinkLocale>
 
         </div>
-        <NuxtLinkLocale to="/cart" class="flex items-center justify-between cursor-pointer">
-          <div class="flex items-center gap-2">
-            <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.804 1.0322C9.24114 1.27353 7.93399 2.22506 7.25911 3.6041C6.93232 4.27293 6.79735 4.90728 6.79735 5.84503V6.62418H5.19894C3.50818 6.62418 3.25243 6.66555 3.14587 6.94825C3.05352 7.1689 0.964928 22.7175 1.00045 22.8692C1.02176 22.945 1.27751 23.2277 1.56877 23.5035L2.09447 24H11.4789H20.8562L21.2328 23.6759C21.6732 23.2967 22 22.9175 22 22.7865C22 22.5865 19.8688 7.04478 19.8262 6.93446C19.7196 6.66555 19.4496 6.62418 17.7731 6.62418H16.1747V5.84503C16.1747 4.91418 16.0397 4.27293 15.72 3.62478C15.1375 2.43192 14.1642 1.5976 12.8997 1.21147C12.2959 1.0322 11.3652 0.949457 10.804 1.0322ZM12.6511 2.28022C13.2194 2.46639 13.6883 2.76978 14.1145 3.22486C14.8036 3.95575 15.038 4.61769 15.038 5.81055V6.62418H11.486H7.93399V5.91398C7.93399 5.52785 7.98372 5.01071 8.04056 4.76938C8.34603 3.51446 9.38322 2.50087 10.6762 2.1768C11.2161 2.04579 12.097 2.08716 12.6511 2.28022ZM18.8316 7.91358C18.8955 8.23075 20.7923 22.2486 20.7923 22.421C20.7923 22.5037 20.7213 22.6485 20.636 22.7382L20.4868 22.8968H11.486H2.4923L2.30759 22.7037L2.12999 22.5175L3.14587 15.1397C3.69998 11.0785 4.16175 7.75499 4.16175 7.7412C4.16885 7.7343 7.45802 7.72741 11.4789 7.72741H18.789L18.8316 7.91358Z" fill="#666666" stroke="#666666" stroke-width="0.5"/>
-            </svg>
-            {{cartCount}}
-            <p class="text-gray-400">{{t('breadcrumb_cart')}}</p>
-          </div>
-        </NuxtLinkLocale>
+        <div class="flex items-center gap-4">
+          <NuxtLinkLocale to="/search" class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-2">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1458 14.5833H15.3229L15.0313 14.3021C16.0875 13.0772 16.6679 11.5132 16.6667 9.89584C16.6667 8.55669 16.2696 7.24762 15.5256 6.13416C14.7816 5.02071 13.7241 4.15287 12.4869 3.6404C11.2497 3.12793 9.88832 2.99385 8.57491 3.2551C7.2615 3.51636 6.05505 4.16122 5.10813 5.10813C4.16122 6.05505 3.51636 7.2615 3.2551 8.57491C2.99385 9.88832 3.12793 11.2497 3.6404 12.4869C4.15287 13.7241 5.02071 14.7816 6.13416 15.5256C7.24762 16.2696 8.55669 16.6667 9.89584 16.6667C11.5729 16.6667 13.1146 16.0521 14.3021 15.0313L14.5833 15.3229V16.1458L19.7917 21.3438L21.3438 19.7917L16.1458 14.5833ZM9.89584 14.5833C7.30209 14.5833 5.20834 12.4896 5.20834 9.89584C5.20834 7.30209 7.30209 5.20834 9.89584 5.20834C12.4896 5.20834 14.5833 7.30209 14.5833 9.89584C14.5833 12.4896 12.4896 14.5833 9.89584 14.5833Z" fill="#666666" />
+              </svg>
+
+              <p class="text-gray-400">{{t('breadcrumb_search')}}</p>
+            </div>
+          </NuxtLinkLocale>
+          <NuxtLinkLocale to="/cart" class="flex items-center justify-between cursor-pointer">
+            <div class="flex items-center gap-2">
+              <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.804 1.0322C9.24114 1.27353 7.93399 2.22506 7.25911 3.6041C6.93232 4.27293 6.79735 4.90728 6.79735 5.84503V6.62418H5.19894C3.50818 6.62418 3.25243 6.66555 3.14587 6.94825C3.05352 7.1689 0.964928 22.7175 1.00045 22.8692C1.02176 22.945 1.27751 23.2277 1.56877 23.5035L2.09447 24H11.4789H20.8562L21.2328 23.6759C21.6732 23.2967 22 22.9175 22 22.7865C22 22.5865 19.8688 7.04478 19.8262 6.93446C19.7196 6.66555 19.4496 6.62418 17.7731 6.62418H16.1747V5.84503C16.1747 4.91418 16.0397 4.27293 15.72 3.62478C15.1375 2.43192 14.1642 1.5976 12.8997 1.21147C12.2959 1.0322 11.3652 0.949457 10.804 1.0322ZM12.6511 2.28022C13.2194 2.46639 13.6883 2.76978 14.1145 3.22486C14.8036 3.95575 15.038 4.61769 15.038 5.81055V6.62418H11.486H7.93399V5.91398C7.93399 5.52785 7.98372 5.01071 8.04056 4.76938C8.34603 3.51446 9.38322 2.50087 10.6762 2.1768C11.2161 2.04579 12.097 2.08716 12.6511 2.28022ZM18.8316 7.91358C18.8955 8.23075 20.7923 22.2486 20.7923 22.421C20.7923 22.5037 20.7213 22.6485 20.636 22.7382L20.4868 22.8968H11.486H2.4923L2.30759 22.7037L2.12999 22.5175L3.14587 15.1397C3.69998 11.0785 4.16175 7.75499 4.16175 7.7412C4.16885 7.7343 7.45802 7.72741 11.4789 7.72741H18.789L18.8316 7.91358Z" fill="#666666" stroke="#666666" stroke-width="0.5"/>
+              </svg>
+              {{cartCount}}
+              <p class="text-gray-400">{{t('breadcrumb_cart')}}</p>
+            </div>
+          </NuxtLinkLocale>
+        </div>
+
       </div>
     </div>
     <Drawer v-model:visible="mobileMenuActive" header=" " position="right">
       <div class="flex flex-col items-start gap-4">
+
         <NuxtLinkLocale class="opacity-80 " :to="link.url" v-for="(link,index) in links" :key="index">{{link.label}}</NuxtLinkLocale>
         <Select fluid class="w-full" v-model="selectedLang" :options="languages" @update:modelValue="switchLanguage" option-value="value" option-label="name"   />
         <Button :label="t('button_callback')"  fluid/>

@@ -114,11 +114,11 @@ const createOrder = async ()=>{
           <div class="sticky top-6 border rounded-lg p-6 ">
             <div class="bg-gray-50 rounded-lg p-8 mb-6">
               <div class="grid grid-cols-2 gap-2 mb-3">
-                <p class="opacity-60">{{t('cart_page_summ')}}</p><p class="text-right">{{cart.total_price}} €</p>
+                <p class="opacity-60">{{t('cart_page_summ')}}</p><p class="text-right">{{cart.total_price}} ₽</p>
                 <!--                <p class="opacity-60">{{t('cart_page_delivery')}}</p><p class="text-right">10000 €</p>-->
                 <!--                <p class="opacity-60 border-b pb-5 mb-5">{{t('cart_page_discount')}}</p><p class="text-right">10000 €</p>-->
 
-                <p class="">{{t('cart_page_total')}}</p><p class="text-right">{{cart.total_price}} €</p>
+                <p class="">{{t('cart_page_total')}}</p><p class="text-right">{{cart.total_price}} ₽</p>
               </div>
               <p class="opacity-60 text-sm">{{t('cart_page_delivery_text')}}</p>
             </div>
