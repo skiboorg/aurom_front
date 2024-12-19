@@ -27,7 +27,7 @@ const sendForm = async ()=>{
 <section class="bg-gray-50 mb-9">
   <div class="container">
     <p class="text-sm md:text-md opacity-60 mb-4 md:mb-9">{{t('index_tag_add_form')}}</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 align-items-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
 
       <div v-if="!send" class="col-12 md:col-5">
         <h3 class="font-medium text-2xl md:text-4xl mb-5">Будьте в курсе событий</h3>
@@ -46,7 +46,7 @@ const sendForm = async ()=>{
         <p class="text-center text-2xl">Форма оправлена</p>
       </div>
       <div class="col-12 md:col-6 col-offset-0 md:col-offset-1">
-        <img class="w-full h-full object-cover rounded-xl" src="@/assets/images/main.png" alt="">
+        <img class="w-full h-full object-cover rounded-xl" src="@/assets/images/form.png" alt="">
       </div>
     </div>
   </div>
