@@ -32,7 +32,11 @@ useSeoMeta({
           <img class="w-full object-cover" :src="item.image" alt="">
           <p class="font-medium">{{item.name}}</p>
           <p class="opacity-60">{{item.description}}</p>
-          <NuxtLinkLocale class="border-b inline-block border-black" :to="`/news/${item.slug}`">{{t('button_product_card')}}</NuxtLinkLocale>
+
+          <div class="flex items-center justify-between w-full">
+            <NuxtLinkLocale class="border-b block border-black" :to="`/news/${item.slug}`">{{t('button_product_card')}}</NuxtLinkLocale>
+            <p class="opacity-60">{{new Date(item.created).toLocaleDateString()}}</p>
+          </div>
         </div>
       </div>
     </div>

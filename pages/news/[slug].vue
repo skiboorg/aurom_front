@@ -32,12 +32,12 @@ onBeforeMount(async (): Promise<void> => {
     <div class="container">
       <img class="rounded-2xl h-[300px] object-cover w-full"  :src="news_item.image_top" alt="">
       <PageBreadcrumbs :items="items" />
-      <div class="w-full md:w-10/12 m-auto">
+      <div class="w-full md:w-3/4 ">
         <h1 class="font-medium text-2xl md:text-4xl mb-5">{{news_item.name}}</h1>
 
         <div class="mb-4" v-html="news_item.content"></div>
 
-        <div v-if="news_item?.images.length>0" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div v-if="news_item?.images?.length>0" class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div class="" v-for="image in news_item.images" :key="image.id">
             <img :src="image.image" class="w-full"  alt="">
           </div>

@@ -3,25 +3,14 @@ export default defineNuxtPlugin(() => {
   const sessionUUID = useCookie('session_uuid')
   const eurUsd = useCookie('eurUsd')
   const eurRub = useCookie('eurRub')
+  const {$api} = useNuxtApp()
 
-    // fetch('https://www.cbr-xml-daily.ru/latest.js')
-    //     .then(response => {
-    //         if (!response.ok) {
-    //             throw new Error(`HTTP error! Status: ${response.status}`);
-    //         }
-    //         return response.json();
-    //     })
-    //     .then(data => {
-    //         console.log('Полученные данные:', data);
-    //         eurRub.value = parseFloat(data['rates']['EUR'])
-    //         eurUsd.value =  parseFloat(data['rates']['EUR']) / parseFloat(data['rates']['USD'])
-    //     })
-    //     .catch(error => {
-    //         console.error('Ошибка при выполнении запроса:', error);
-    //     });
+    $api(`/api/data/courses`).then(response => {
+        eurUsd.value = response['eurUsd'] || 0
+        eurRub.value = response['eurRub'] || 0
+    })
 
-    eurRub.value = 100
-    eurUsd.value =  90
+
   function uuidv4() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(
       /[xy]/g,
