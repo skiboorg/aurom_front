@@ -32,7 +32,3 @@ const faq_items = [
     </div>
   </section>
 </template>
-
-<style scoped>
-
-</style>
