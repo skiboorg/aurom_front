@@ -31,7 +31,7 @@ const rightList = [
 </script>
 
 <template>
-  <section>
+  <section v-if="false">
     <div class="container">
       <img class="rounded-2xl h-[300px] object-cover w-full"  src="~/assets/images/other.png" alt="">
       <PageBreadcrumbs :items="items" />

@@ -21,7 +21,7 @@ const links = [
   {label:t('promotion'), url:'/promotion'},
   {label:t('menu_about'), url:'/about'},
   {label:t('menu_partner'), url:'/partnership'},
-  {label:t('menu_add_service'), url:'/services'},
+  // {label:t('menu_add_service'), url:'/services'},
   //{label:t('menu_delivery'), url:'/'},
   {label:t('menu_contacts'), url:'/contacts'},
   {label:t('menu_news'), url:'/news'},
