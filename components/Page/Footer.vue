@@ -46,7 +46,7 @@ const { t } = useI18n()
         <div class="">
           <p class="text-sm opacity-60 mb-6">{{t('footer_time')}}</p>
 
-          <p class="text-xl font-bold" >8:00 — 19:00 GMT +3</p>
+          <p class="text-xl font-bold" >{{t('contacts_time_msk_val')}}</p>
         </div>
       </div>
       <div class="flex items-center justify-between py-6 flex-wrap">

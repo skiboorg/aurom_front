@@ -39,7 +39,7 @@ useSeoMeta({
         </div>
         <div class="bg-gray-50 p-7  rounded-xl">
           <p class="text-2xl font-medium mb-9">{{t('contacts_email')}}</p>
-          <a class="opacity-60 text-lg font-medium " href="mailto:meridiantour@yandex.ru">meridiantour@yandex.ru</a>
+          <a class="opacity-60 text-lg font-medium " href="mailto:uet2022@mail.ru">uet2022@mail.ru</a>
         </div>
         <div class="bg-gray-50 p-7  rounded-xl">
           <p class="text-2xl font-medium mb-9">{{t('contacts_time')}}</p>
