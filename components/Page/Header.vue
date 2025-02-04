@@ -23,9 +23,9 @@ const links = [
   {label:t('menu_partner'), url:'/partnership'},
   // {label:t('menu_add_service'), url:'/services'},
   //{label:t('menu_delivery'), url:'/'},
-  {label:t('menu_contacts'), url:'/contacts'},
   {label:t('menu_news'), url:'/news'},
   {label:t('sale'), url:'/sale'},
+  {label:t('menu_contacts'), url:'/contacts'},
 ]
 </script>
 
@@ -54,7 +54,7 @@ const links = [
               </g>
             </svg>
 
-            <p class="opacity-80 "><a href="tel:+7 928 067 51 12">+7 928 067 51 12</a></p>
+            <p class="opacity-80 "><a href="tel:+79633785752">+7 963 378 57 52</a></p>
 
           </div>
 

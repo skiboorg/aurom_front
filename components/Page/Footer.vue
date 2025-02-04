@@ -34,8 +34,8 @@ const { t } = useI18n()
         <div class="flex flex-col items-start justify-between">
           <div class="flex flex-col items-start">
             <p class="text-sm opacity-60 mb-6">{{t('footer_contact')}}</p>
-            <a class="text-xl font-bold"  href="tel:+7 928 067 51 12">+7 928 067 51 12</a>
-            <a class="text-xl font-bold"  href="mailto:info@laurom.ru">info@laurom.ru</a>
+            <a class="text-xl font-bold"  href="tel:+79633785752">+7 963 378 57 52</a>
+            <a class="text-xl font-bold"  href="mailto:uet2022@mail.ru">uet2022@mail.ru</a>
           </div>
 <!--          <div class="">-->
 <!--            <p class="text-sm opacity-60 mb-6">{{t('footer_address')}}</p>-->

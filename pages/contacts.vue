@@ -31,10 +31,8 @@ useSeoMeta({
         <div class="bg-gray-50 p-7 rounded-xl ">
           <p class="text-2xl font-medium mb-9">{{t('contacts_phone')}}</p>
           <p class="opacity-60 text-sm whitespace-pre-wrap">{{t('contacts_ru_call')}}</p>
-          <a class="opacity-90 text-lg font-medium block border-b mb-4 pb-4" href="tel:+7 928 067 51 12">+7 928 067 51 12</a>
+          <a class="opacity-90 text-lg font-medium block " href="tel:+79633785752">+7 963 378 57 52</a>
 
-          <p class="opacity-60 text-sm whitespace-pre-wrap">{{t('contacts_www_call')}}</p>
-          <a class="opacity-90 text-lg font-medium " href="tel:+7 928 067 51 12">+7 928 067 51 12</a>
 
         </div>
         <div class="bg-gray-50 p-7  rounded-xl">
@@ -49,6 +47,15 @@ useSeoMeta({
           <p class="opacity-60 text-sm whitespace-pre-wrap">{{t('contacts_time_days')}}</p>
           <p class="opacity-90 text-lg font-medium " >{{t('contacts_time_days_val')}}</p>
 
+        </div>
+        <div class="bg-gray-50 p-7  rounded-xl">
+          <p class="text-2xl font-medium mb-9">РЕКВИЗИТЫ</p>
+          <p class=" whitespace-pre-wrap">ООО "Юнайтед Экспо Трейд"</p>
+
+          <p class="opacity-60 text-sm whitespace-pre-wrap">ИНН / КПП</p>
+          <p class="opacity-90 text-lg font-medium block" >7714486727 / 770801001</p>
+          <p class="opacity-60 text-sm whitespace-pre-wrap">ОГРН</p>
+          <p class="opacity-90 text-lg font-medium block" >1227700337204</p>
         </div>
       </div>
     </div>
