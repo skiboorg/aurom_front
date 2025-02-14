@@ -146,7 +146,7 @@
   "checkout_page_payment": "Способ оплаты",
   "checkout_page_fio": "ФИО",
   "checkout_page_email": "Адрес эл. почты*",
-  "checkout_page_phone": "Телефон*",
+  "checkout_page_phone": "Телефон* (без + и разделителей, например 79991112233)",
   "checkout_page_address": "Адрес доставки",
   "checkout_page_comment": "Комментарий к заказу",
   "checkout_page_button": "Оформить заказ",

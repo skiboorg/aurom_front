@@ -41,8 +41,17 @@ const createOrder = async ()=>{
     method: 'POST',
     body:orderData.value,
   })
-  toast.add({ severity: 'success',summary:'Заказ', detail: response.message, life: 3000 });
-  navigateTo('/')
+
+  if (response.result){
+    toast.add({ severity: 'success',summary:'Заказ', detail: response.message, life: 3000 });
+    if(response.formUrl){
+      console.log(response.formUrl)
+      window.location.href = response.formUrl
+    }else{
+      navigateTo('/')
+    }
+  }
+
 }
 </script>
 
@@ -65,7 +74,7 @@ const createOrder = async ()=>{
               <label for="email">{{t('checkout_page_email')}}</label>
             </FloatLabel>
             <FloatLabel variant="in">
-              <InputText required fluid id="phone" v-model="orderData.phone"   />
+              <InputMask required fluid id="phone" v-model="orderData.phone" mask="79999999999"    />
               <label for="phone">{{t('checkout_page_phone')}}</label>
             </FloatLabel>
             <FloatLabel variant="in">
