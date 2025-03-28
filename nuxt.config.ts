@@ -4,7 +4,23 @@ import { fileURLToPath } from 'url'
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module", '@nuxtjs/i18n', '@nuxtjs/robots'],
+  modules: [
+      "@nuxtjs/tailwindcss",
+      "@primevue/nuxt-module",
+      '@nuxtjs/i18n',
+      '@nuxtjs/robots',
+      [
+          'yandex-metrika-module-nuxt3',
+          {
+              id: '100609287',
+              webvisor: true,
+              clickmap: true,
+              // useCDN: false,
+              trackLinks: true,
+              accurateTrackBounce: true,
+          }
+      ]
+  ],
   css: [
       'primeicons/primeicons.css',
       '~/assets/styles/tailwind.css',

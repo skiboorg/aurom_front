@@ -18,13 +18,13 @@ const switchLanguage = () => {
 }
 
 const links = [
-  {label:t('promotion'), url:'/promotion'},
+  // {label:t('promotion'), url:'/promotion'},
   {label:t('menu_about'), url:'/about'},
   {label:t('menu_partner'), url:'/partnership'},
   // {label:t('menu_add_service'), url:'/services'},
   //{label:t('menu_delivery'), url:'/'},
   {label:t('menu_news'), url:'/news'},
-  {label:t('sale'), url:'/sale'},
+  // {label:t('sale'), url:'/sale'},
   {label:t('menu_contacts'), url:'/contacts'},
 ]
 </script>
