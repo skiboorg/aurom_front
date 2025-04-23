@@ -2,6 +2,16 @@
 import { useI18n } from 'vue-i18n'
 const { locale } = useI18n()
 const { t } = useI18n()
+const links = [
+  // {label:t('promotion'), url:'/promotion'},
+  {label:t('menu_about'), url:'/about'},
+  {label:t('menu_partner'), url:'/partnership'},
+  {label:t('menu_add_service'), url:'/services'},
+  //{label:t('menu_delivery'), url:'/'},
+  {label:t('menu_news'), url:'/news'},
+  // {label:t('sale'), url:'/sale'},
+  {label:t('menu_contacts'), url:'/contacts'},
+]
 </script>
 
 <template>
@@ -22,13 +32,7 @@ const { t } = useI18n()
         <div class="">
           <p class="text-sm opacity-60 mb-6">{{t('footer_menu')}}</p>
           <div class="flex flex-col">
-            <NuxtLinkLocale to="/about" class="opacity-60 text-sm">О компании</NuxtLinkLocale>
-<!--            <nuxt-link to="/" class="opacity-60 text-sm">Партнерство</nuxt-link>-->
-<!--            <nuxt-link to="/" class="opacity-60 text-sm">Дополнительные услуги</nuxt-link>-->
-<!--            <nuxt-link to="/" class="opacity-60 text-sm">Доставка и оплата</nuxt-link>-->
-<!--            <nuxt-link to="/" class="opacity-60 text-sm">Новости</nuxt-link>-->
-<!--            <nuxt-link to="/" class="opacity-60 text-sm">Каталог</nuxt-link>-->
-            <NuxtLinkLocale to="/contacts" class="opacity-60 text-sm">Контакты</NuxtLinkLocale>
+            <NuxtLinkLocale class="opacity-80 text-sm" :to="link.url" v-for="(link,index) in links" :key="index">{{link.label}}</NuxtLinkLocale>
           </div>
         </div>
         <div class="flex flex-col items-start justify-between">
@@ -50,7 +54,7 @@ const { t } = useI18n()
         </div>
       </div>
       <div class="flex items-center justify-between py-6 flex-wrap">
-        <p class="opacity-60">© 2010 - 2024 United Expo Trade</p>
+        <p class="opacity-60">© 2010 - 2025 United Expo Trade</p>
         <p  class="opacity-60"><a href="https://www.instagram.com/vkryaz/" target="_blank">Website Development</a></p>
       </div>
     </div>

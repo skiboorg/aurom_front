@@ -8,6 +8,7 @@ const product = ref({})
 const modelVisible = ref(false)
 const cartCount = useState('cartCount')
 import { useToast } from 'primevue/usetoast';
+import {priceFormat} from "~/utils/formatter";
 const eurUsd = useCookie('eurUsd')
 const eurRub = useCookie('eurRub')
 
@@ -94,7 +95,7 @@ const addToCart = async ()=>{
             <p><span class="opacity-60">{{t('item_page_in_delivery')}}</span> {{product.delivery}}</p>
 
           </div>
-          <p class="text-4xl font-medium mb-5">{{product.price}} ₽</p>
+          <p class="text-4xl font-medium mb-5">{{priceFormat(product.price)}} ₽</p>
 <!--          <p class="text-1xl font-medium opacity-60 mb-5">{{parseFloat(product.price / eurUsd || 0).toFixed(2)}} $ / {{parseFloat(product.price / eurRub || 0).toFixed(2)}} €</p>-->
 
 
